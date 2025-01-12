@@ -1,11 +1,31 @@
 footer {
-  display: flex;
-  gap: 24px;
+  gap: 16px;
   padding-block: 24px;
 
   font: 14px/150% var(--font-family);
 }
 
-footer span:nth-child(1) {
-  margin-right: auto;
+#footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+#footer-terms {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (width>=80em) {
+  footer {
+    display: flex;
+    gap: 24px;
+    padding-block: 24px;
+
+    font: 14px/150% var(--font-family);
+  }
+  footer span:nth-child(1) {
+    margin-right: auto;
+  }
 }
